@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wujud Benda: Coba Sendiri</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef5f3;--grid:#d3e3df;--card:#fff;--ink:#1d2b4a;--mut:#56627c;--line:#1d2b4a;--blue:#2f6fd0;--red:#d94a3d;--grn:#2e9b6a;--yel:#f2b632;--wat:#a9d3f5;--soft:#e6eefb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121a2b;--grid:#1d2842;--card:#1a2339;--ink:#e8eefc;--mut:#9fb0d0;--line:#e8eefc;--blue:#6aa3ff;--red:#ff7d6e;--grn:#52d29b;--yel:#ffcf5c;--wat:#2d5e92;--soft:#243050}}
+:root[data-theme=dark]{--bg:#121a2b;--grid:#1d2842;--card:#1a2339;--ink:#e8eefc;--mut:#9fb0d0;--line:#e8eefc;--blue:#6aa3ff;--red:#ff7d6e;--grn:#52d29b;--yel:#ffcf5c;--wat:#2d5e92;--soft:#243050}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;color:var(--ink);font:400 16px/1.55 Lexend,system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 14px 60px}
+h1{font-size:1.7rem;margin:8px 0 4px;line-height:1.2}
+.sub{color:var(--mut);margin:0 0 16px}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+nav a{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:2px 12px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.9rem}
+section{background:var(--card);border:2px solid var(--line);border-radius:6px 18px 6px 18px;padding:16px;margin-bottom:22px;box-shadow:4px 4px 0 var(--line)}
+h2{font-size:1.15rem;margin:0 0 2px}
+.tag{color:var(--mut);font-size:.8rem;margin:0 0 8px}
+.k{background:var(--soft);border-left:5px solid var(--blue);padding:8px 10px;margin:8px 0;border-radius:0 8px 8px 0}
+svg{width:100%;height:auto;display:block;background:var(--soft);border-radius:10px}
+svg text{font-family:Lexend,sans-serif;fill:var(--ink);font-size:11px}
+label{display:block;font-weight:600;margin:10px 0 2px}
+input[type=range]{width:100%;accent-color:var(--blue);height:32px}
+.out{font-weight:600;background:var(--soft);border-radius:8px;padding:8px 10px;margin-top:6px}
+.row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+button{font:600 .9rem Lexend,sans-serif;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:6px 12px;cursor:pointer;min-height:40px}
+button.on{background:var(--yel);color:#1d2b4a}
+details{margin-top:10px}summary{cursor:pointer;font-weight:600;color:var(--blue)}
+details p{margin:6px 0 0}
+.good{color:var(--grn)}.bad{color:var(--red)}
+.cards button{flex:1 1 45%;text-align:left}
+.ln{stroke:var(--line);stroke-width:2;fill:none}
+section{display:none;margin-bottom:0}section.on{display:block}nav a.on{background:var(--yel);color:#1d2b4a}main{padding-bottom:96px}.pg{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--bg);border-top:2px solid var(--line);padding:8px 14px calc(8px + env(safe-area-inset-bottom,0px))}.pg div{max-width:640px;margin:auto;display:flex;gap:8px;align-items:center}.pg button{flex:1}.pg span{flex:0 0 auto;font-weight:600;color:var(--mut);font-size:.85rem}.pg button:disabled{opacity:.35}.dv{margin-top:12px}.step{background:var(--soft);border-left:5px solid var(--grn);border-radius:0 8px 8px 0;padding:6px 10px;margin:6px 0}.step small{color:var(--mut);font-weight:600}.step pre{margin:2px 0 0;font:600 .95rem/1.5 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;color:var(--ink)}.dv .b2{width:100%}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body><main>
+<h1>Wujud Benda: Coba Sendiri</h1>
+<p class="sub">Geser, tekan, dan lihat apa yang berubah. Tiap soal ada jawabannya di bawah.</p>
+<nav><a href="#s2">2</a><a href="#s3">3</a><a href="#s4">4</a><a href="#s12">12</a><a href="#s15">15</a><a href="#s20">20</a><a href="#s21">21</a><a href="#s27">27</a><a href="#s36">36</a><a href="#s37">37</a></nav>
+
+<section id="s2"><h2>Soal 2: Dongkrak hidrolik</h2><p class="tag">Hukum Pascal, 2025 Final no. 49</p>
+<div class="k">Tekanan di cairan tertutup sama besar. Piston besar 20 kali lebih lebar, jadi gayanya 20 kali lebih besar.</div>
+<svg viewBox="0 0 320 170"><g id="p2"></g></svg>
+<label>Gaya dorong di piston kecil: <span id="p2v"></span></label><input id="p2r" type="range" min="0" max="8" step="0.5" value="2">
+<div class="out" id="p2o"></div>
+<div class="dv" id="dv2"></div>
+<details><summary>Lihat jawaban</summary><p>Berat benda = 10 × 10 = 100 N. Gaya = 100 × (2 ÷ 40) = <b>5 N</b> (C).</p></details></section>
+
+<section id="s3"><h2>Soal 3: Tenggelam atau mengapung?</h2><p class="tag">Massa jenis, 2025 Final no. 50</p>
+<div class="k">Bandingkan massa jenis benda dengan air (1 g/cm³). Lebih besar tenggelam, sama melayang, lebih kecil mengapung.</div>
+<svg viewBox="0 0 320 180"><rect x="90" y="50" width="140" height="120" fill="var(--wat)"/><path class="ln" d="M90 20V170H230V20"/><rect id="p3c" x="140" width="40" height="40" fill="var(--yel)" stroke="var(--line)" stroke-width="2"/><text x="240" y="48">permukaan air</text></svg>
+<label>Massa benda: <span id="p3v"></span> g (volume tetap 20 cm³)</label><input id="p3r" type="range" min="5" max="60" step="5" value="50">
+<div class="out" id="p3o"></div>
+<div class="dv" id="dv3"></div>
+<details><summary>Lihat jawaban</summary><p>50 ÷ 20 = 2,5 g/cm³, lebih besar dari 1. Benda <b>tenggelam</b> (B).</p></details></section>
+
+<section id="s4"><h2>Soal 4: Pipa menyempit</h2><p class="tag">Kontinuitas, 2025 Final no. 56</p>
+<div class="k">Air yang lewat tiap detik jumlahnya sama. Jalannya sempit, jadi air harus ngebut.</div>
+<svg viewBox="0 0 320 120"><path id="p4p" fill="var(--wat)" stroke="var(--line)" stroke-width="2"/><g id="p4d"></g></svg>
+<label>Diameter bagian sempit: <span id="p4v"></span> cm (bagian lebar 2 cm)</label><input id="p4r" type="range" min="0.5" max="2" step="0.5" value="1">
+<div class="out" id="p4o"></div>
+<div class="dv" id="dv4"></div>
+<details><summary>Lihat jawaban</summary><p>Luas pipa naik-turun mengikuti diameter dikuadratkan. Diameter jadi setengah, luas jadi seperempat, laju jadi 4 kali: <b>4 m/s</b> (A).</p></details></section>
+
+<section id="s12"><h2>Soal 12: Balon di mulut botol</h2><p class="tag">Pemuaian gas, 2024 no. 50</p>
+<div class="k">Gas yang panas bergerak lebih cepat dan butuh tempat lebih luas. Jumlah partikelnya tetap.</div>
+<svg viewBox="0 0 120 160" style="max-width:260px;margin:auto"><rect x="45" y="95" width="30" height="55" fill="none" class="ln"/><circle id="p12b" cx="60" fill="var(--red)" opacity=".35" stroke="var(--line)" stroke-width="2"/><g id="p12d"></g></svg>
+<label>Suhu botol: <span id="p12v"></span> °C</label><input id="p12r" type="range" min="0" max="100" step="5" value="10">
+<div class="out" id="p12o"></div>
+<details><summary>Lihat jawaban</summary><p><b>Ekspansi gas</b> (A). "Penguapan" itu untuk cairan jadi gas, sedangkan kontraksi malah bikin balon kempis.</p></details></section>
+
+<section id="s15"><h2>Soal 15: Segitiga perubahan wujud</h2><p class="tag">2023 no. 37</p>
+<div class="k">Naik ke wujud yang lebih renggang butuh panas (menyerap). Turun ke wujud yang lebih rapat membuang panas (melepas).</div>
+<svg viewBox="0 0 320 190"><g id="p15"></g></svg>
+<div class="row" id="p15b"></div>
+<button id="p15a">Warnai semua</button>
+<div class="out" id="p15o">Tekan nomor panah.</div>
+<details><summary>Lihat jawaban</summary><p>Garis 2 menguap (cair ke gas), jadi K cair, L gas, M padat. Yang menyerap kalor: <b>2, 6, 3</b> (D).</p></details></section>
+
+<section id="s20"><h2>Soal 20: Tisu menyedot air</h2><p class="tag">Kapilaritas, 2023 no. 13</p>
+<div class="k">Kohesi: tarik-menarik sesama zat. Adhesi: tarik-menarik dengan zat lain. Kalau adhesi menang, cairan naik.</div>
+<svg viewBox="0 0 320 170"><rect x="30" y="110" width="260" height="50" id="p20w" fill="var(--wat)"/><path class="ln" d="M30 80V160H290V80"/><path id="p20t" class="ln"/><rect id="p20l"/><text id="p20x" x="160" y="30" text-anchor="middle"></text></svg>
+<div class="row"><button id="p20a" class="on">Air</button><button id="p20h">Raksa</button></div>
+<label>Lebar pipa kecil: <span id="p20v"></span></label><input id="p20r" type="range" min="1" max="5" step="1" value="1">
+<div class="out" id="p20o"></div>
+<details><summary>Lihat jawaban</summary><p>(A) <b>kapilaritas</b>, (B) <b>kapiler</b>, (C) <b>kohesi</b>, (D) <b>adhesi</b>.</p></details></section>
+
+<section id="s21"><h2>Soal 21: Kubus yang terapung</h2><p class="tag">Archimedes, 2023 no. 14</p>
+<div class="k">Bagian yang tercelup = massa jenis benda ÷ massa jenis air.</div>
+<svg viewBox="0 0 320 180"><rect x="90" y="70" width="140" height="100" fill="var(--wat)"/><rect id="p21c" x="135" width="50" height="50" fill="var(--yel)" stroke="var(--line)" stroke-width="2" opacity=".9"/><rect id="p21u" x="135" width="50" fill="var(--yel)" stroke="var(--line)" stroke-width="2"/><rect id="p21s" x="135" width="50" fill="var(--wat)" opacity=".55"/><path class="ln" d="M90 20V170H230V20"/><text x="240" y="74">air</text></svg>
+<label>Massa jenis kubus: <span id="p21v"></span> kg/m³</label><input id="p21r" type="range" min="100" max="1000" step="50" value="700">
+<div class="out" id="p21o"></div>
+<div class="dv" id="dv21"></div>
+<details><summary>Lihat jawaban</summary><p>(A) 500 g, (B) lebih kecil, (C) Archimedes, (D) 700 ÷ 1000 = 70% tercelup, jadi terapung <b>30%</b>.</p></details></section>
+
+<section id="s27"><h2>Soal 27: Dua potong kayu</h2><p class="tag">Massa jenis dan satuan, 2021 no. 46</p>
+<div class="k">Kayu yang sama punya massa jenis sama, berapa pun ukurannya. Massa = massa jenis × volume.</div>
+<svg viewBox="0 0 320 130"><rect id="p27a" x="40" y="30" fill="#c9954f" stroke="var(--line)" stroke-width="2"/><rect id="p27b" x="190" fill="#c9954f" stroke="var(--line)" stroke-width="2"/><text x="40" y="122">400 cm³ = 280 g</text><text id="p27t" x="190" y="122"></text></svg>
+<label>Volume kayu kedua: <span id="p27v"></span> cm³</label><input id="p27r" type="range" min="100" max="1000" step="100" value="600">
+<div class="row"><button id="p27u">Tampilkan dalam kg/m³</button></div>
+<div class="out" id="p27o"></div>
+<div class="dv" id="dv27"></div>
+<details><summary>Lihat jawaban</summary><p>280 ÷ 400 = 0,7 g/cm³ = 700 kg/m³. Massa kayu kedua = 0,7 × 600 = 420 g. Jawaban <b>C</b>. Pilihan D salah karena 700 g/cm³ lebih padat dari emas.</p></details></section>
+
+<section id="s36"><h2>Soal 36: Barometer raksa</h2><p class="tag">Tekanan udara, 2021 no. 39</p>
+<div class="k">Yang diukur adalah tinggi tegak kolom raksa dari permukaan raksa di bak. Miringkan tabung, tinggi tegaknya tidak berubah.</div>
+<svg viewBox="0 0 320 200"><rect x="20" y="150" width="200" height="40" fill="#9aa4b5"/><line x1="10" y1="150" x2="250" y2="150" stroke="var(--line)" stroke-dasharray="4"/><g id="p36"></g></svg>
+<label>Miringkan tabung: <span id="p36v"></span>°</label><input id="p36r" type="range" min="0" max="50" step="5" value="0">
+<div class="row" id="p36b"></div>
+<div class="out" id="p36o">Tekan huruf untuk lihat bagian tabungnya.</div>
+<details><summary>Lihat jawaban</summary><p>Tinggi yang dipakai adalah <b>Q</b> (B). P adalah ruang hampa, R di bawah permukaan bak, S panjang total.</p></details></section>
+
+<section id="s37"><h2>Soal 37: Wujud plasma</h2><p class="tag">2021 no. 58</p>
+<div class="k">Plasma adalah gas yang sangat panas sampai atomnya pecah jadi ion (+) dan elektron (−).</div>
+<svg viewBox="0 0 320 110"><rect id="p37box" x="10" y="5" width="300" height="100" fill="none" class="ln"/><g id="p37d"></g></svg>
+<label>Panas: <span id="p37v"></span></label><input id="p37r" type="range" min="0" max="3" step="1" value="0">
+<p style="margin:10px 0 4px"><b>Mana yang plasma?</b> Tekan satu.</p>
+<div class="row cards" id="p37c"></div>
+<div class="out" id="p37o"></div>
+<details><summary>Lihat jawaban</summary><p>Aurora dan petir adalah plasma. Awan itu butir air atau es, pelangi itu peristiwa cahaya. Jawaban <b>B</b>.</p></details></section>
+</main>
+<div class="pg"><div><button id="pv">Sebelumnya</button><span id="pc"></span><button id="nx">Berikutnya</button></div></div>
+<script>
+const $=i=>document.getElementById(i),N="http://www.w3.org/2000/svg";
+function el(t,a,p){const e=document.createElementNS(N,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+function bind(id,f){const r=$(id+'r');const u=()=>{$(id+'v').textContent=r.value;f(+r.value)};r.oninput=u;u()}
+const anims=[];function loop(){anims.forEach(f=>f());requestAnimationFrame(loop)}
+
+/* 2 */
+{const g=$('p2');g.innerHTML=`<rect x="40" y="130" width="220" height="22" fill="var(--wat)"/><rect id="a" x="40" width="20" fill="var(--wat)"/><rect id="b" x="200" width="60" fill="var(--wat)"/><path class="ln" d="M40 50V152H260V50M60 50V130H200V50"/><rect id="c" x="38" y="0" width="24" height="7" fill="var(--ink)"/><rect id="d" x="198" height="7" width="64" fill="var(--ink)"/><rect id="e" x="212" width="36" height="30" fill="var(--yel)" stroke="var(--line)" stroke-width="2"/><text id="f" x="230" text-anchor="middle" font-size="10">10 kg</text><line id="h" x1="50" x2="50" stroke="var(--red)" stroke-width="3"/><text x="50" y="14" text-anchor="middle" fill="var(--red)" style="fill:var(--red)" id="t"></text>`;
+bind('p2',f=>{const up=f*20>=100,L=up?80:55+f*3,R=up?58:70;const s=(i,a)=>{for(const k in a)$(i).setAttribute(k,a[k])};
+s('a',{y:L+7,height:130-L-7});s('b',{y:R+7,height:130-R-7});s('c',{y:L});s('d',{y:R});s('e',{y:R-30});s('f',{y:R-10});s('h',{y1:20,y2:L-2});$('t').textContent=f+' N';
+$('p2o').innerHTML=`Piston besar bisa mengangkat: ${f*20} N (butuh 100 N). ${up?'<span class="good">Benda naik!</span>':'<span class="bad">Belum cukup, benda diam.</span>'}`})}
+
+/* 3 */
+bind('p3',m=>{const d=m/20,c=$('p3c');let y=d>1?130:d==1?90:50+d*40-40;if(d<1)y=50+d*40-40;c.setAttribute('y',y);
+$('p3o').innerHTML=`Massa jenis = ${m} ÷ 20 = ${d} g/cm³. ${d>1?'<span class="bad">Lebih besar dari air: tenggelam.</span>':d==1?'Sama dengan air: melayang.':'<span class="good">Lebih kecil dari air: mengapung.</span>'}`});
+
+/* 4 */
+{const d=$('p4d'),dots=[];for(let i=0;i<14;i++)dots.push({e:el('circle',{r:3,fill:'var(--blue)'},d),x:Math.random()*300,y:0,w:i%2});
+let dn=1;bind('p4',x=>{dn=x;const h=x*30,t=60-h/2,b=60+h/2;$('p4p').setAttribute('d',`M10 30H130C170 30 150 ${t} 190 ${t}H310V${b}H190C150 ${b} 170 90 130 90H10Z`);const v=Math.pow(2/x,2);$('p4o').innerHTML=`Luas jadi ${(1/v).toFixed(2).replace('.00','')} kali, laju jadi <b>${+v.toFixed(2)} m/s</b>.`});
+anims.push(()=>{const v=Math.pow(2/dn,2);dots.forEach((p,i)=>{const wide=p.x<150;p.x+=(wide?1:v)*.6;if(p.x>310)p.x=10;const w=p.x<150;const half=w?24:dn*15-4;p.y=60+Math.sin(i*2.1)*half;p.e.setAttribute('cx',p.x);p.e.setAttribute('cy',p.y)})})}
+
+/* 12 */
+{const d=$('p12d'),ps=[];for(let i=0;i<10;i++)ps.push({e:el('circle',{r:3,fill:'var(--blue)'},d),x:50+Math.random()*20,y:100+Math.random()*45,vx:Math.random()-.5,vy:Math.random()-.5});
+let T=10,R=14;bind('p12',t=>{T=t;R=12+t*.28;$('p12b').setAttribute('r',R);$('p12b').setAttribute('cy',95-R);$('p12o').innerHTML=`Partikel: 10 (tetap). Balon: ${t<40?'kempis':t<70?'mulai mengembang':'<span class="good">tegak mengembang</span>'}.`});
+anims.push(()=>{const s=.3+T/18;ps.forEach(p=>{p.x+=p.vx*s;p.y+=p.vy*s;const top=95-2*R+6;if(p.y<top){p.y=top;p.vy=Math.abs(p.vy)}if(p.y>146){p.y=146;p.vy=-Math.abs(p.vy)}const hw=p.y<95?Math.max(R-6,12):12;if(p.x<60-hw){p.x=60-hw;p.vx=Math.abs(p.vx)}if(p.x>60+hw){p.x=60+hw;p.vx=-Math.abs(p.vx)}p.e.setAttribute('cx',p.x);p.e.setAttribute('cy',p.y)})})}
+
+/* 15 */
+{const g=$('p15'),B={K:[55,150,'K cair'],L:[160,35,'L gas'],M:[265,150,'M padat']},A={1:['L','K','mengembun',0],2:['K','L','menguap',1],3:['M','L','menyublim',1],4:['L','M','mengkristal',0],5:['K','M','membeku',0],6:['M','K','melebur',1]};
+el('defs',{},g).innerHTML='<marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="context-stroke"/></marker>';
+const ln={};for(const n in A){const[a,b]=A[n],[x1,y1]=B[a],[x2,y2]=B[b];const dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy),px=-dy/l*12,py=dx/l*12,sh=30/l;
+const u=x1+dx*.28+px,v=y1+dy*.28+py,u2=x1+dx*.72+px,v2=y1+dy*.72+py;
+ln[n]=el('line',{x1:u,y1:v,x2:u2,y2:v2,stroke:'var(--mut)','stroke-width':2.5,'marker-end':'url(#ar)',opacity:.5},g);
+el('text',{x:(u+u2)/2+px*.9,y:(v+v2)/2+py*.9+4,'text-anchor':'middle','font-weight':600},g).textContent=n}
+for(const k in B){el('rect',{x:B[k][0]-32,y:B[k][1]-14,width:64,height:28,rx:6,fill:'var(--card)',stroke:'var(--line)','stroke-width':2},g);el('text',{x:B[k][0],y:B[k][1]+4,'text-anchor':'middle'},g).textContent=B[k][2]}
+const col=n=>A[n][3]?'var(--red)':'var(--blue)',tx=n=>`${n} ${A[n][2]}: ${B[A[n][0]][2].slice(2)} ke ${B[A[n][1]][2].slice(2)}, ${A[n][3]?'<span class="bad">menyerap kalor</span>':'<span style="color:var(--blue)">melepas kalor</span>'}`;
+const reset=()=>{for(const n in ln){ln[n].setAttribute('stroke','var(--mut)');ln[n].setAttribute('opacity',.5)}};
+for(const n in A){const b=document.createElement('button');b.textContent=n;b.onclick=()=>{reset();ln[n].setAttribute('stroke',col(n));ln[n].setAttribute('opacity',1);$('p15o').innerHTML=tx(n)};$('p15b').appendChild(b)}
+$('p15a').onclick=()=>{for(const n in ln){ln[n].setAttribute('stroke',col(n));ln[n].setAttribute('opacity',1)}$('p15o').innerHTML='<span class="bad">Merah: menyerap (2, 3, 6)</span>. <span style="color:var(--blue)">Biru: melepas (1, 4, 5)</span>.'}}
+
+/* 20 */
+{let hg=0;const tb=()=>{const w=+$('p20r').value*5+4,x=160-w/2,lv=hg?122:null;return[w,x]};
+const draw=()=>{const s=+$('p20r').value,w=s*5+4,x=160-w/2,top=45;$('p20v').textContent=['sangat sempit','sempit','sedang','lebar','sangat lebar'][s-1];
+const rise=30/s,lvl=hg?110+rise*.7:110-rise*2.3;$('p20t').setAttribute('d',`M${x} ${top}V135M${x+w} ${top}V135`);
+const l=$('p20l');l.setAttribute('x',x);l.setAttribute('width',w);l.setAttribute('fill',hg?'#8c96a8':'var(--wat)');l.setAttribute('y',hg?Math.max(lvl,top):Math.max(lvl,top));l.setAttribute('height',135-Math.max(lvl,top));
+$('p20w').setAttribute('fill',hg?'#8c96a8':'var(--wat)');$('p20x').textContent=hg?'kohesi > adhesi: raksa turun':'adhesi > kohesi: air naik';
+$('p20o').innerHTML=hg?'Raksa justru <span class="bad">lebih rendah</span> dari permukaan di luar.':`Pipa makin ${s<3?'sempit, air makin <span class="good">tinggi</span>':'lebar, air naik makin sedikit'}.`};
+$('p20r').oninput=draw;$('p20a').onclick=()=>{hg=0;$('p20a').className='on';$('p20h').className='';draw()};$('p20h').onclick=()=>{hg=1;$('p20h').className='on';$('p20a').className='';draw()};draw()}
+
+/* 21 */
+bind('p21',r=>{const s=r/1000,h=50,y=70-(1-s)*h;['p21c','p21u','p21s'].forEach(i=>$(i).setAttribute('y',i=='p21c'?y:i=='p21u'?y:70));$('p21c').setAttribute('height',h);
+$('p21u').setAttribute('height',h*(1-s));$('p21u').setAttribute('fill','var(--yel)');$('p21c').setAttribute('fill','var(--yel)');$('p21c').setAttribute('opacity',.4);
+$('p21s').setAttribute('y',70);$('p21s').setAttribute('height',h*s);
+$('p21u').setAttribute('y',y);$('p21c').setAttribute('y',y);
+$('p21o').innerHTML=`Tercelup ${Math.round(s*100)}%, <b>terapung ${Math.round((1-s)*100)}%</b>. Massa kubus (10 cm) = ${r} gram.`});
+
+/* 27 */
+{let kg=0;const up=()=>{const v=+$('p27r').value,m=Math.round(.7*v);$('p27v').textContent=v;const sz=x=>Math.cbrt(x)*7.2;
+$('p27a').setAttribute('width',sz(400));$('p27a').setAttribute('height',sz(400));$('p27a').setAttribute('y',110-sz(400));
+$('p27b').setAttribute('width',sz(v));$('p27b').setAttribute('height',sz(v));$('p27b').setAttribute('y',110-sz(v));
+$('p27t').textContent=`${v} cm³ = ${m} g`;
+$('p27o').innerHTML=`Massa jenis kayu: <b>${kg?'700 kg/m³':'0,7 g/cm³'}</b> di kedua kayu.<br>Massa kayu kedua = 0,7 × ${v} = <b>${m} g</b>.`};
+$('p27r').oninput=up;$('p27u').onclick=()=>{kg=!kg;$('p27u').textContent=kg?'Tampilkan dalam g/cm³':'Tampilkan dalam kg/m³';up()};up()}
+
+/* 36 */
+{const g=$('p36'),n=(t,a)=>el(t,a,g);let sel='Q';
+const draw=()=>{g.innerHTML='';const ang=+$('p36r').value*Math.PI/180,x0=100,y0=150,L=130,ex=x0+Math.sin(ang)*L,ey=y0-Math.cos(ang)*L,hm=76/130*L*0+Math.cos(ang)*L*0+100*0;
+const Lm=84/Math.cos(ang),mx=x0+Math.sin(ang)*Lm,my=y0-84;
+n('line',{x1:x0,y1:y0+25,x2:x0,y2:y0,stroke:'var(--ink)','stroke-width':14,opacity:.2});
+n('line',{x1:x0,y1:y0+25,x2:x0+Math.sin(ang)*(L+10),y2:y0-Math.cos(ang)*(L+10)+25,stroke:'var(--ink)','stroke-width':0,opacity:0});
+n('line',{x1:x0,y1:y0+25,x2:x0,y2:y0,stroke:'#9aa4b5','stroke-width':12});
+n('line',{x1:x0,y1:y0,x2:x0+Math.sin(ang)*(84/Math.cos(ang)+36/Math.cos(ang)),y2:y0-84-36,stroke:'var(--mut)','stroke-width':14,opacity:.45,'stroke-linecap':'butt'});
+n('line',{x1:x0,y1:y0,x2:mx,y2:my,stroke:'#8c96a8','stroke-width':9});
+const tx=x0+Math.sin(ang)*(84/Math.cos(ang)+36/Math.cos(ang));
+const seg=(k,xa,ya,xb,yb)=>{const on=sel==k;n('line',{x1:xa,y1:ya,x2:xb,y2:yb,stroke:on?'var(--red)':'var(--mut)','stroke-width':on?5:2});n('text',{x:xa+10,y:(ya+yb)/2+4,fill:'var(--ink)','font-weight':on?600:400}).textContent=k};
+const bx=Math.max(tx,mx)+30;seg('P',bx,y0-120,bx,y0-84);seg('Q',bx,y0-84,bx,y0);seg('R',bx,y0,bx,y0+25);seg('S',bx+50,y0-120,bx+50,y0+25);
+n('text',{x:20,y:20}).textContent=`panjang raksa di tabung: ${Math.round(76/Math.cos(ang))} cm, tinggi tegak: 76 cm`;
+n('text',{x:20,y:36}).textContent='tekanan udara menekan permukaan bak';
+const o={P:'P: ruang hampa di atas. Bukan raksa.',Q:'Q: kolom raksa tegak. <b class="good">Ini yang dipakai.</b>',R:'R: bagian tabung di bawah permukaan bak.',S:'S: panjang total tabung.'};
+$('p36o').innerHTML=o[sel]};
+$('p36r').oninput=()=>{$('p36v').textContent=$('p36r').value;draw()};$('p36v').textContent=0;
+['P','Q','R','S'].forEach(k=>{const b=document.createElement('button');b.textContent=k;b.onclick=()=>{sel=k;draw()};$('p36b').appendChild(b)});draw()}
+
+/* 37 */
+{const d=$('p37d'),ps=[];for(let i=0;i<24;i++)ps.push({e:el('circle',{r:4},d),hx:30+(i%8)*35,hy:30+Math.floor(i/8)*26,x:0,y:0,vx:Math.random()-.5,vy:Math.random()-.5,s:i%2});
+let st=0;const nm=['Padat','Cair','Gas','Plasma'],ex=['partikel rapat, hanya bergetar','partikel dekat, saling bergeser','partikel berjauhan, bebas bergerak','atom pecah: ion (+) dan elektron (−) bebas, menyala'];
+bind('p37',v=>{st=v;$('p37v').textContent=nm[v];ps.forEach(p=>{p.x=p.hx;p.y=p.hy;p.e.setAttribute('fill',v==3?(p.s?'var(--red)':'var(--blue)'):'var(--blue)');p.e.setAttribute('r',v==3?(p.s?5:3):4)});$('p37box').setAttribute('fill',v==3?'rgba(242,182,50,.25)':'none');$('p37v').parentElement.insertAdjacentHTML('beforeend','');
+$('p37v').textContent=nm[v]+': '+ex[v]});
+anims.push(()=>{ps.forEach(p=>{if(st==0){p.e.setAttribute('cx',p.hx+Math.random()*3-1.5);p.e.setAttribute('cy',p.hy+Math.random()*3-1.5);return}
+const s=[0,.6,1.8,3][st],top=st==1?55:10;p.x+=p.vx*s;p.y+=p.vy*s;if(p.x<16||p.x>304)p.vx*=-1;if(p.y<top||p.y>100)p.vy*=-1;p.x=Math.min(304,Math.max(16,p.x));p.y=Math.min(100,Math.max(top,p.y));p.e.setAttribute('cx',p.x);p.e.setAttribute('cy',p.y)})});
+const C=[['Aurora',1],['Awan',0],['Pelangi',0],['Petir',1]],cs=$('p37c');
+C.forEach(([t,ok])=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{$('p37o').innerHTML=ok?`<span class="good">${t}: plasma.</span> Gas terionisasi yang bercahaya.`:`<span class="bad">${t}: bukan plasma.</span> ${t=='Awan'?'Isinya butir air dan kristal es.':'Pelangi bukan zat, hanya cahaya yang terurai.'}`};cs.appendChild(b)})}
+{const D={
+dv2:[['Diketahui',`m = 10 kg
+A₁ = 2 cm²
+A₂ = 40 cm²`],['Ditanya','F₁'],['Hukum Pascal','P₁ = P₂'],['Ganti P = F/A','F₁/A₁ = F₂/A₂'],['Isolasi F₁','F₁ = F₂ · (A₁/A₂)'],['Gaya yang dilawan = berat','F₂ = W = m·g = 10 · 10 = 100 N'],['Hitung','F₁ = 100 · (2/40) = 5 N   → C'],['Cek usaha',`V₁ = V₂ → A₁d₁ = A₂d₂
+d₁/d₂ = A₂/A₁ = 20
+F₁d₁ = 5 · 20d₂ = 100d₂ = F₂d₂ ✓`]],
+dv3:[['Diketahui',`m = 50 g
+V = 20 cm³
+ρ_f = 1 g/cm³`],['Ditanya','keadaan benda'],['Berat','W = m·g = ρ_b·V·g'],['Gaya apung (tercelup penuh)','F_A = ρ_f·V·g'],['Bandingkan, V dan g saling coret','W/F_A = (ρ_b·V·g)/(ρ_f·V·g) = ρ_b/ρ_f'],['Syarat',`ρ_b/ρ_f > 1 → tenggelam
+ρ_b/ρ_f = 1 → melayang
+ρ_b/ρ_f < 1 → mengapung`],['Massa jenis benda','ρ_b = m/V = 50/20 = 2,5 g/cm³'],['Bandingkan','ρ_b/ρ_f = 2,5/1 = 2,5 > 1 → tenggelam → B'],['Cek gaya',`W = 50 gf
+F_A = 1 · 20 = 20 gf
+ΣF = W − F_A = 30 gf ke bawah ✓`]],
+dv4:[['Diketahui',`d₁ = 2 cm
+v₁ = 1 m/s
+d₂ = 1 cm`],['Ditanya','v₂'],['Debit','Q = V/t'],['Volume tabung air','V = A·s = A·(v·t)'],['Gabung, t saling coret','Q = A·v'],['Kontinuitas','Q₁ = Q₂ → A₁v₁ = A₂v₂'],['Isolasi v₂','v₂ = v₁ · (A₁/A₂)'],['Luas lingkaran','A = πd²/4'],['Rasio luas, π dan ¼ coret','A₁/A₂ = d₁²/d₂²'],['Rumus akhir','v₂ = v₁ · (d₁/d₂)²'],['Hitung','v₂ = 1 · (2/1)² = 4 m/s   → A']],
+dv21:[['Diketahui',`s = 10 cm
+ρ_P = 500 kg/m³
+ρ_f = 1000 kg/m³`],['Ditanya','(A) m_P  (B) ρ_b vs ρ_f  (C) hukum  (D) % terapung, ρ_b = 700'],['Archimedes (V_c = volume tercelup)','F_A = m_f·g = ρ_f·V_c·g'],['Terapung diam','ΣF = 0 → F_A = W'],['Isi masing-masing','ρ_f·V_c·g = ρ_b·V·g'],['g saling coret','V_c/V = ρ_b/ρ_f'],['(A) massa P',`V = s³ = (0,1 m)³ = 10⁻³ m³
+m = ρ·V = 500 · 10⁻³ = 0,5 kg = 500 g`],['(B) dan (C)',`ρ_b < ρ_f (500, 400, 600 < 1000) → lebih kecil
+hukum: Archimedes`],['(D) kubus 700 kg/m³',`V_c/V = 700/1000 = 0,7 = 70%
+terapung = 1 − 0,7 = 0,3 = 30%`],['Cek',`m = 700 · 10⁻³ = 0,7 kg
+V_c = m/ρ_f = 7·10⁻⁴ m³
+V_c/V = 7·10⁻⁴ / 10⁻³ = 0,7 ✓`]],
+dv27:[['Diketahui',`m₁ = 280 g
+V₁ = 400 cm³
+V₂ = 600 cm³
+bahan sama → ρ₁ = ρ₂`],['Ditanya','m₂ dan ρ'],['Rumus','ρ = m/V → m = ρ·V'],['Konversi satuan',`1 g/cm³ = 10⁻³ kg / (10⁻² m)³
+        = 10⁻³ / 10⁻⁶ kg/m³
+        = 10³ kg/m³`],['Massa jenis kayu','ρ₁ = 280/400 = 0,7 g/cm³ = 700 kg/m³'],['Bahan sama','ρ₂ = ρ₁ = 0,7 g/cm³'],['Massa kayu kedua','m₂ = ρ₂·V₂ = 0,7 · 600 = 420 g   → C'],['Cara cepat (perbandingan)',`m₁/V₁ = m₂/V₂
+m₂ = 280 · (600/400) = 420 g ✓`]]};
+for(const id in D){const box=$(id),S=D[id];let n=0;box.innerHTML='<button class="b1">Lihat penurunan rumus</button><div></div><button class="b2" hidden></button>';
+const[b1,st,b2]=box.children;
+const add=()=>{const[l,f]=S[n++];st.insertAdjacentHTML('beforeend','<div class="step"><small>'+l+'</small><pre>'+f+'</pre></div>');b2.hidden=n>=S.length;b2.textContent='Langkah berikutnya ('+n+'/'+S.length+')';b2.previousElementSibling.lastElementChild.scrollIntoView({block:'nearest',behavior:'smooth'})};
+b1.onclick=()=>{b1.hidden=true;add()};b2.onclick=add}}
+{const ids=['s2','s3','s4','s12','s15','s20','s21','s27','s36','s37'],ss=ids.map($),as=[...document.querySelectorAll('nav a')];let cur=0;
+const show=i=>{cur=Math.max(0,Math.min(ids.length-1,i));ss.forEach((s,k)=>s.classList.toggle('on',k==cur));as.forEach((a,k)=>a.classList.toggle('on',k==cur));$('pv').disabled=cur==0;$('nx').disabled=cur==ids.length-1;$('pc').textContent=(cur+1)+' dari '+ids.length;history.replaceState(null,'','#'+ids[cur]);window.scrollTo(0,0)};
+as.forEach((a,k)=>a.onclick=e=>{e.preventDefault();show(k)});$('pv').onclick=()=>show(cur-1);$('nx').onclick=()=>show(cur+1);
+show(Math.max(0,ids.indexOf(location.hash.slice(1))))}
+loop();
+</script></body></html>
