@@ -125,7 +125,7 @@ const anims=[];function loop(){anims.forEach(f=>f());requestAnimationFrame(loop)
 {const g=$('p2');g.innerHTML=`<rect x="40" y="130" width="220" height="22" fill="var(--wat)"/><rect id="a" x="40" width="20" fill="var(--wat)"/><rect id="b" x="200" width="60" fill="var(--wat)"/><path class="ln" d="M40 50V152H260V50M60 50V130H200V50"/><rect id="c" x="38" y="0" width="24" height="7" fill="var(--ink)"/><rect id="d" x="198" height="7" width="64" fill="var(--ink)"/><rect id="e" x="212" width="36" height="30" fill="var(--yel)" stroke="var(--line)" stroke-width="2"/><text id="f" x="230" text-anchor="middle" font-size="10">10 kg</text><line id="h" x1="50" x2="50" stroke="var(--red)" stroke-width="3"/><text x="50" y="14" text-anchor="middle" fill="var(--red)" style="fill:var(--red)" id="t"></text>`;
 bind('p2',f=>{const up=f*20>=100,L=up?80:55+f*3,R=up?58:70;const s=(i,a)=>{for(const k in a)$(i).setAttribute(k,a[k])};
 s('a',{y:L+7,height:130-L-7});s('b',{y:R+7,height:130-R-7});s('c',{y:L});s('d',{y:R});s('e',{y:R-30});s('f',{y:R-10});s('h',{y1:20,y2:L-2});$('t').textContent=f+' N';
-$('p2o').innerHTML=`Piston besar bisa mengangkat: ${f*20} N (butuh 100 N). ${up?'<span class="good">Benda naik!</span>':'<span class="bad">Belum cukup, benda diam.</span>'}`})}
+$('p2o').innerHTML=`Piston besar bisa mengangkat: ${f*20} N (butuh 100 N). ${up?'<span class="good">Benda naik!</span>':'<span class="bad">Belum cukup</span>'}`})}
 
 /* 3 */
 bind('p3',m=>{const d=m/20,c=$('p3c');let y=d>1?130:d==1?90:50+d*40-40;if(d<1)y=50+d*40-40;c.setAttribute('y',y);
