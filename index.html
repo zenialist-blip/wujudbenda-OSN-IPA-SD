@@ -32,10 +32,11 @@ details p{margin:6px 0 0}
 .good{color:var(--grn)}.bad{color:var(--red)}
 .cards button{flex:1 1 45%;text-align:left}
 .ln{stroke:var(--line);stroke-width:2;fill:none}
-section{display:none;margin-bottom:0}section.on{display:block}nav a.on{background:var(--yel);color:#1d2b4a}main{padding-bottom:96px}.pg{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--bg);border-top:2px solid var(--line);padding:8px 14px calc(8px + env(safe-area-inset-bottom,0px))}.pg div{max-width:640px;margin:auto;display:flex;gap:8px;align-items:center}.pg button{flex:1}.pg span{flex:0 0 auto;font-weight:600;color:var(--mut);font-size:.85rem}.pg button:disabled{opacity:.35}
+section{display:none;margin-bottom:0}section.on{display:block}nav a.on{background:var(--yel);color:#1d2b4a}main{padding-bottom:96px}.pg{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--bg);border-top:2px solid var(--line);padding:8px 14px calc(8px + env(safe-area-inset-bottom,0px))}.pg div{max-width:640px;margin:auto;display:flex;gap:8px;align-items:center}.pg button{flex:1}.pg span{flex:0 0 auto;font-weight:600;color:var(--mut);font-size:.85rem}.pg button:disabled{opacity:.35}.dv{margin-top:12px}.step{background:var(--soft);border-left:5px solid var(--grn);border-radius:0 8px 8px 0;padding:6px 10px;margin:6px 0}.step small{color:var(--mut);font-weight:600}.step pre{margin:2px 0 0;font:600 .95rem/1.5 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;color:var(--ink)}.dv .b2{width:100%}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body><main>
 <h1>Wujud Benda: Coba Sendiri</h1>
+<p class="sub">Geser, tekan, dan lihat apa yang berubah. Tiap soal ada jawabannya di bawah.</p>
 <nav><a href="#s2">2</a><a href="#s3">3</a><a href="#s4">4</a><a href="#s12">12</a><a href="#s15">15</a><a href="#s20">20</a><a href="#s21">21</a><a href="#s27">27</a><a href="#s36">36</a><a href="#s37">37</a></nav>
 
 <section id="s2"><h2>Soal 2: Dongkrak hidrolik</h2><p class="tag">Hukum Pascal, 2025 Final no. 49</p>
@@ -43,6 +44,7 @@ section{display:none;margin-bottom:0}section.on{display:block}nav a.on{backgroun
 <svg viewBox="0 0 320 170"><g id="p2"></g></svg>
 <label>Gaya dorong di piston kecil: <span id="p2v"></span></label><input id="p2r" type="range" min="0" max="8" step="0.5" value="2">
 <div class="out" id="p2o"></div>
+<div class="dv" id="dv2"></div>
 <details><summary>Lihat jawaban</summary><p>Berat benda = 10 × 10 = 100 N. Gaya = 100 × (2 ÷ 40) = <b>5 N</b> (C).</p></details></section>
 
 <section id="s3"><h2>Soal 3: Tenggelam atau mengapung?</h2><p class="tag">Massa jenis, 2025 Final no. 50</p>
@@ -50,6 +52,7 @@ section{display:none;margin-bottom:0}section.on{display:block}nav a.on{backgroun
 <svg viewBox="0 0 320 180"><rect x="90" y="50" width="140" height="120" fill="var(--wat)"/><path class="ln" d="M90 20V170H230V20"/><rect id="p3c" x="140" width="40" height="40" fill="var(--yel)" stroke="var(--line)" stroke-width="2"/><text x="240" y="48">permukaan air</text></svg>
 <label>Massa benda: <span id="p3v"></span> g (volume tetap 20 cm³)</label><input id="p3r" type="range" min="5" max="60" step="5" value="50">
 <div class="out" id="p3o"></div>
+<div class="dv" id="dv3"></div>
 <details><summary>Lihat jawaban</summary><p>50 ÷ 20 = 2,5 g/cm³, lebih besar dari 1. Benda <b>tenggelam</b> (B).</p></details></section>
 
 <section id="s4"><h2>Soal 4: Pipa menyempit</h2><p class="tag">Kontinuitas, 2025 Final no. 56</p>
@@ -57,6 +60,7 @@ section{display:none;margin-bottom:0}section.on{display:block}nav a.on{backgroun
 <svg viewBox="0 0 320 120"><path id="p4p" fill="var(--wat)" stroke="var(--line)" stroke-width="2"/><g id="p4d"></g></svg>
 <label>Diameter bagian sempit: <span id="p4v"></span> cm (bagian lebar 2 cm)</label><input id="p4r" type="range" min="0.5" max="2" step="0.5" value="1">
 <div class="out" id="p4o"></div>
+<div class="dv" id="dv4"></div>
 <details><summary>Lihat jawaban</summary><p>Luas pipa naik-turun mengikuti diameter dikuadratkan. Diameter jadi setengah, luas jadi seperempat, laju jadi 4 kali: <b>4 m/s</b> (A).</p></details></section>
 
 <section id="s12"><h2>Soal 12: Balon di mulut botol</h2><p class="tag">Pemuaian gas, 2024 no. 50</p>
@@ -87,6 +91,7 @@ section{display:none;margin-bottom:0}section.on{display:block}nav a.on{backgroun
 <svg viewBox="0 0 320 180"><rect x="90" y="70" width="140" height="100" fill="var(--wat)"/><rect id="p21c" x="135" width="50" height="50" fill="var(--yel)" stroke="var(--line)" stroke-width="2" opacity=".9"/><rect id="p21u" x="135" width="50" fill="var(--yel)" stroke="var(--line)" stroke-width="2"/><rect id="p21s" x="135" width="50" fill="var(--wat)" opacity=".55"/><path class="ln" d="M90 20V170H230V20"/><text x="240" y="74">air</text></svg>
 <label>Massa jenis kubus: <span id="p21v"></span> kg/m³</label><input id="p21r" type="range" min="100" max="1000" step="50" value="700">
 <div class="out" id="p21o"></div>
+<div class="dv" id="dv21"></div>
 <details><summary>Lihat jawaban</summary><p>(A) 500 g, (B) lebih kecil, (C) Archimedes, (D) 700 ÷ 1000 = 70% tercelup, jadi terapung <b>30%</b>.</p></details></section>
 
 <section id="s27"><h2>Soal 27: Dua potong kayu</h2><p class="tag">Massa jenis dan satuan, 2021 no. 46</p>
@@ -95,6 +100,7 @@ section{display:none;margin-bottom:0}section.on{display:block}nav a.on{backgroun
 <label>Volume kayu kedua: <span id="p27v"></span> cm³</label><input id="p27r" type="range" min="100" max="1000" step="100" value="600">
 <div class="row"><button id="p27u">Tampilkan dalam kg/m³</button></div>
 <div class="out" id="p27o"></div>
+<div class="dv" id="dv27"></div>
 <details><summary>Lihat jawaban</summary><p>280 ÷ 400 = 0,7 g/cm³ = 700 kg/m³. Massa kayu kedua = 0,7 × 600 = 420 g. Jawaban <b>C</b>. Pilihan D salah karena 700 g/cm³ lebih padat dari emas.</p></details></section>
 
 <section id="s36"><h2>Soal 36: Barometer raksa</h2><p class="tag">Tekanan udara, 2021 no. 39</p>
@@ -206,6 +212,41 @@ anims.push(()=>{ps.forEach(p=>{if(st==0){p.e.setAttribute('cx',p.hx+Math.random(
 const s=[0,.6,1.8,3][st],top=st==1?55:10;p.x+=p.vx*s;p.y+=p.vy*s;if(p.x<16||p.x>304)p.vx*=-1;if(p.y<top||p.y>100)p.vy*=-1;p.x=Math.min(304,Math.max(16,p.x));p.y=Math.min(100,Math.max(top,p.y));p.e.setAttribute('cx',p.x);p.e.setAttribute('cy',p.y)})});
 const C=[['Aurora',1],['Awan',0],['Pelangi',0],['Petir',1]],cs=$('p37c');
 C.forEach(([t,ok])=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{$('p37o').innerHTML=ok?`<span class="good">${t}: plasma.</span> Gas terionisasi yang bercahaya.`:`<span class="bad">${t}: bukan plasma.</span> ${t=='Awan'?'Isinya butir air dan kristal es.':'Pelangi bukan zat, hanya cahaya yang terurai.'}`};cs.appendChild(b)})}
+{const D={
+dv2:[['Diketahui',`m = 10 kg
+A₁ = 2 cm²
+A₂ = 40 cm²`],['Ditanya','F₁'],['Hukum Pascal','P₁ = P₂'],['Ganti P = F/A','F₁/A₁ = F₂/A₂'],['Isolasi F₁','F₁ = F₂ · (A₁/A₂)'],['Gaya yang dilawan = berat','F₂ = W = m·g = 10 · 10 = 100 N'],['Hitung','F₁ = 100 · (2/40) = 5 N   → C'],['Cek usaha',`V₁ = V₂ → A₁d₁ = A₂d₂
+d₁/d₂ = A₂/A₁ = 20
+F₁d₁ = 5 · 20d₂ = 100d₂ = F₂d₂ ✓`]],
+dv3:[['Diketahui',`m = 50 g
+V = 20 cm³
+ρf = 1 g/cm³`],['Ditanya','keadaan benda'],['Berat','W = m·g = ρb·V·g'],['Gaya apung (tercelup penuh)','FA = ρf·V·g'],['Bandingkan, V dan g saling coret','W/FA = (ρb·V·g)/(ρf·V·g) = ρb/ρf'],['Syarat',`ρb/ρf > 1 → tenggelam
+ρb/ρf = 1 → melayang
+ρb/ρf < 1 → mengapung`],['Massa jenis benda','ρb = m/V = 50/20 = 2,5 g/cm³'],['Bandingkan','ρb/ρf = 2,5/1 = 2,5 > 1 → tenggelam → B'],['Cek gaya',`W = 50 gf
+FA = 1 · 20 = 20 gf
+ΣF = W − FA = 30 gf ke bawah ✓`]],
+dv4:[['Diketahui',`d₁ = 2 cm
+v₁ = 1 m/s
+d₂ = 1 cm`],['Ditanya','v₂'],['Debit','Q = V/t'],['Volume tabung air','V = A·s = A·(v·t)'],['Gabung, t saling coret','Q = A·v'],['Kontinuitas','Q₁ = Q₂ → A₁v₁ = A₂v₂'],['Isolasi v₂','v₂ = v₁ · (A₁/A₂)'],['Luas lingkaran','A = πd²/4'],['Rasio luas, π dan ¼ coret','A₁/A₂ = d₁²/d₂²'],['Rumus akhir','v₂ = v₁ · (d₁/d₂)²'],['Hitung','v₂ = 1 · (2/1)² = 4 m/s   → A']],
+dv21:[['Diketahui',`s = 10 cm
+ρP = 500 kg/m³
+ρf = 1000 kg/m³`],['Ditanya','(A) mP  (B) ρb vs ρf  (C) hukum  (D) % terapung, ρb = 700'],['Archimedes (Vc = volume tercelup)','FA = mf·g = ρf·Vc·g'],['Terapung diam','ΣF = 0 → FA = W'],['Isi masing-masing','ρf·Vc·g = ρb·V·g'],['g saling coret','Vc/V = ρb/ρf'],['(A) massa P',`V = s³ = (0,1 m)³ = 10⁻³ m³
+m = ρ·V = 500 · 10⁻³ = 0,5 kg = 500 g`],['(B) dan (C)',`ρb < ρf (500, 400, 600 < 1000) → lebih kecil
+hukum: Archimedes`],['(D) kubus 700 kg/m³',`Vc/V = 700/1000 = 0,7 = 70%
+terapung = 1 − 0,7 = 0,3 = 30%`],['Cek',`m = 700 · 10⁻³ = 0,7 kg
+Vc = m/ρf = 7·10⁻⁴ m³
+Vc/V = 7·10⁻⁴ / 10⁻³ = 0,7 ✓`]],
+dv27:[['Diketahui',`m₁ = 280 g
+V₁ = 400 cm³
+V₂ = 600 cm³
+bahan sama → ρ₁ = ρ₂`],['Ditanya','m₂ dan ρ'],['Rumus','ρ = m/V → m = ρ·V'],['Konversi satuan',`1 g/cm³ = 10⁻³ kg / (10⁻² m)³
+        = 10⁻³ / 10⁻⁶ kg/m³
+        = 10³ kg/m³`],['Massa jenis kayu','ρ₁ = 280/400 = 0,7 g/cm³ = 700 kg/m³'],['Bahan sama','ρ₂ = ρ₁ = 0,7 g/cm³'],['Massa kayu kedua','m₂ = ρ₂·V₂ = 0,7 · 600 = 420 g   → C'],['Cara cepat (perbandingan)',`m₁/V₁ = m₂/V₂
+m₂ = 280 · (600/400) = 420 g ✓`]]};
+for(const id in D){const box=$(id),S=D[id];let n=0;box.innerHTML='<button class="b1">Lihat penurunan rumus</button><div></div><button class="b2" hidden></button>';
+const[b1,st,b2]=box.children;
+const add=()=>{const[l,f]=S[n++];st.insertAdjacentHTML('beforeend','<div class="step"><small>'+l+'</small><pre>'+f+'</pre></div>');b2.hidden=n>=S.length;b2.textContent='Langkah berikutnya ('+n+'/'+S.length+')';b2.previousElementSibling.lastElementChild.scrollIntoView({block:'nearest',behavior:'smooth'})};
+b1.onclick=()=>{b1.hidden=true;add()};b2.onclick=add}}
 {const ids=['s2','s3','s4','s12','s15','s20','s21','s27','s36','s37'],ss=ids.map($),as=[...document.querySelectorAll('nav a')];let cur=0;
 const show=i=>{cur=Math.max(0,Math.min(ids.length-1,i));ss.forEach((s,k)=>s.classList.toggle('on',k==cur));as.forEach((a,k)=>a.classList.toggle('on',k==cur));$('pv').disabled=cur==0;$('nx').disabled=cur==ids.length-1;$('pc').textContent=(cur+1)+' dari '+ids.length;history.replaceState(null,'','#'+ids[cur]);window.scrollTo(0,0)};
 as.forEach((a,k)=>a.onclick=e=>{e.preventDefault();show(k)});$('pv').onclick=()=>show(cur-1);$('nx').onclick=()=>show(cur+1);
